@@ -44,3 +44,36 @@ class Order:
 
     def __str__(self):
         return "\n".join(map(str, self.__dishes))
+
+
+dish_1 = Dish("Pizza", 10)
+dish_2 = Dish("Pasta", 15)
+dish_3 = Dish("Salad", 5)
+dish_4 = Dish("Soup", 3)
+dish_5 = Dish("Steak", 20)
+dish_6 = Dish("Burger", 7)
+
+category_1 = Category("Main Course")
+category_1.add_dish(dish_1)
+category_1.add_dish(dish_2)
+category_1.add_dish(dish_3)
+
+category_2 = Category("Appetizer")
+category_2.add_dish(dish_4)
+category_2.add_dish(dish_5)
+category_2.add_dish(dish_6)
+
+menu = Menu()
+menu.add_category(category_1)
+menu.add_category(category_2)
+
+order = Order()
+
+print(menu, "\n")
+
+order += dish_1
+order += dish_2
+order += dish_3
+
+print("\nOrder:")
+print(order, "\n")
