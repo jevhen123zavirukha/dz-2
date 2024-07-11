@@ -39,3 +39,27 @@ class ProperFraction:
         new_numerator = self.numerator * other.numerator
         new_denominator = self.denominator * other.denominator
         return ProperFraction(new_numerator, new_denominator)
+
+
+fraction1 = ProperFraction(3, 5)
+fraction2 = ProperFraction(4, 5)
+
+print(f"first fraction: {fraction1}")
+print(f"second fraction: {fraction2}\n")
+
+print("Comparison:")
+print(fraction1 < fraction2)
+print(fraction1 > fraction2)
+print(fraction1 == fraction2, "\n")
+
+print("Addition:")
+addition = fraction1 + fraction2
+print(addition)
+
+print("Subtraction:")
+subtraction = fraction1 - fraction2
+print(subtraction)
+
+print("Multiplication:")
+multiplication = fraction1 * fraction2
+print(multiplication)
