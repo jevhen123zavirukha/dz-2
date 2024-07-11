@@ -7,7 +7,7 @@ class ProperFraction:
         if not isinstance(numerator, int) or not isinstance(denominator, int):
             raise TypeError("Numerator and denominator must be integers.")
         if denominator == 0:
-            raise ValueError("Denominator cannot be zero.")
+            raise ZeroDivisionError("Denominator cannot be zero.")
 
         self.numerator = numerator
         self.denominator = denominator
