@@ -32,3 +32,15 @@ class Menu:
 
     def __str__(self):
         return "\n".join(map(str, self.__categories))
+
+
+class Order:
+    def __init__(self):
+        self.__dishes = []
+
+    def __iadd__(self, dish: Dish):
+        self.__dishes.append(dish)
+        return self
+
+    def __str__(self):
+        return "\n".join(map(str, self.__dishes))
