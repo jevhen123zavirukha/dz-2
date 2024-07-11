@@ -4,6 +4,11 @@ import math
 
 class ProperFraction:
     def __init__(self, numerator, denominator):
+        if not isinstance(numerator, int) or not isinstance(denominator, int):
+            raise TypeError("Numerator and denominator must be integers.")
+        if denominator == 0:
+            raise ValueError("Denominator cannot be zero.")
+
         self.numerator = numerator
         self.denominator = denominator
         self.reduce_fraction()
