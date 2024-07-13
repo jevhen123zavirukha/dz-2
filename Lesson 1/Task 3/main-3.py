@@ -14,6 +14,7 @@ class ProperFraction:
         self.reduce_fraction()
 
     def __str__(self):
+        self.reduce_fraction()
         return f'{self.numerator}/{self.denominator}'
 
     def reduce_fraction(self):
