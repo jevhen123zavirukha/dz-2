@@ -94,3 +94,24 @@ class Cart:
     def __str__(self):
         return "\n".join(f"{product} x {quantity} = {quantity * product.price}"
                          for product, quantity in self.__products.items()) + f"\nTotal: {self.total()} UAH"
+
+
+if __name__ == "__main__":
+    try:
+        x1 = Product("Bread", 10)
+        x2 = Product("Milk", 20)
+        x3 = Product("Butter", 30)
+        x4 = Product("Cheese", 40)
+        cart = Cart()
+        logger.info("Cart created")
+        cart.add_product(x1, 2)
+        cart.add_product(x2, 3)
+        cart.add_product(x3, 4)
+        cart.add_product(x4, 5)
+
+        for product, quantity in cart:
+            print(f"{product.name}: {product.price} UAH x {quantity}")
+
+        print(f"Total price: {cart.total()} UAH\n")
+    except ValueError as e:
+        print(e)
