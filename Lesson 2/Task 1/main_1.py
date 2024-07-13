@@ -15,3 +15,8 @@ stream_handler.setLevel(logging.DEBUG)
 
 logger.addHandler(file_handler)
 logger.addHandler(stream_handler)
+
+
+class PriceError(Exception):
+    def __init__(self, message):
+        super().__init__(message)
