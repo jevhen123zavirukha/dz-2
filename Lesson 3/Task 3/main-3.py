@@ -12,3 +12,10 @@ def prime_generator(limit):
         if is_prime:
             primes.append(num)
             yield num
+
+
+upper_limit = int(input("Enter end (0 - ∞): "))
+prime_gen = prime_generator(upper_limit)
+
+for prime in prime_gen:
+    print(prime)
