@@ -6,3 +6,8 @@ def fibonacci_sequence():
     while True:
         yield a
         a, b = b, a + b
+
+
+fibonacci_gen = fibonacci_sequence()
+for _ in range(10):
+    print(next(fibonacci_gen))
