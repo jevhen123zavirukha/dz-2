@@ -20,3 +20,12 @@ def sequence_generator(first_member, n, func):
 
 def geometric_progression(member):
     return member * 2
+
+
+first = int(input("Enter the starting number"))
+count = int(input())
+
+gen = sequence_generator(first, count, geometric_progression)
+
+for i in gen:
+    print(i)
