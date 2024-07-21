@@ -16,3 +16,7 @@ def sequence_generator(first_member, n, func):
     for _ in range(n):
         yield current_member
         current_member = func(current_member)
+
+
+def geometric_progression(member):
+    return member * 2
