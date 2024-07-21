@@ -2,6 +2,12 @@
 
 
 def prime_generator(limit):
+
+    """
+    :param limit: limit(end)
+    :yield: prime numbers.
+    """
+
     primes = []
     for num in range(2, limit + 1):
         is_prime = True
