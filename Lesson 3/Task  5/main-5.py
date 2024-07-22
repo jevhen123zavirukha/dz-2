@@ -2,6 +2,11 @@
 
 
 def fibonacci_sequence():
+
+    """
+    :yield: fibonacci sequence
+    """
+
     a, b = 0, 1
     while True:
         yield a
