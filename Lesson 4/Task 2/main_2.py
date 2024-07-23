@@ -25,3 +25,8 @@ def fibonacci_memoized():
 
     return fib
 
+
+memoized_fib = fibonacci_memoized()
+n = 10
+
+print(f"Result: {memoized_fib(n)}")
