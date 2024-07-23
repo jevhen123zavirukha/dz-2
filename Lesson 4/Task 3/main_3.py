@@ -1,7 +1,7 @@
 # Task 3
 
 
-def apply_and_sum(nums, func):
+def sum_2(nums, func):
 
     """
 
@@ -12,3 +12,14 @@ def apply_and_sum(nums, func):
 
     result = sum(func(x) for x in nums)
     return result
+
+
+if __name__ == "__main__":
+    nums = [i for i in range(4)]
+
+    def double(x):
+        return x * 2
+
+
+    total = sum_2(nums, double)
+    print(total)
