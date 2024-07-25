@@ -11,3 +11,10 @@ def handle_exceptions(func):
             print(f"An error has occurred: {e}")
     return wrapper
 
+
+@handle_exceptions
+def divide(a, b):
+    return a / b
+
+
+print(f"The result of the division is: {divide(int(input("Enter the dividend: ")), int(input("Enter the divisor: ")))}")
