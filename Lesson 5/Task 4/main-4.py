@@ -13,3 +13,12 @@ def measure_time(func):
         print(f"Function execution time : {execution_time:.3f} seconds")
         return result
     return wrapper
+
+
+@measure_time
+def some_function():
+    time.sleep(2)
+
+
+some_function()
+
