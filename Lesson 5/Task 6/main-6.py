@@ -15,3 +15,14 @@ def limit_calls(max_calls):
 
         return wrapper
     return decorator
+
+
+@limit_calls(3)
+def some_function():
+    print("function")
+
+
+some_function()
+some_function()
+some_function()
+some_function()
