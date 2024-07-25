@@ -9,3 +9,11 @@ def log_arguments_results(func):
 
         return result
     return wrapper
+
+
+@log_arguments_results
+def add_numbers(a, b):
+    return a + b
+
+
+add_numbers(3, 4)
