@@ -1,10 +1,10 @@
 # Task 4
 
 
-def cubes(n):
-    a = [x ** 3 for x in range(2, n + 1)]
-    yield a
+cubes = 10
+a = (x ** 3 for x in range(2, cubes + 1))
 
+res = list(a)
 
-cubes2 = cubes(10)
-print(next(cubes2))
+for i in res:
+    print(f"{i}")
