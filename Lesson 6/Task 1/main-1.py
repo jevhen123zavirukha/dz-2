@@ -53,3 +53,7 @@ class Triangle:
 circle = Circle(7)
 rectangle = Rectangle(4, 6)
 triangle = Triangle(3, 4, 5)
+
+print(f"Circle: area = {circle.area():.2f} cm\n perimeter = {circle.perimeter():.2f} cm\n")
+print(f"Rectangle: area = {rectangle.area():.2f} cm\n perimeter = {rectangle.perimeter():.2f} cm\n")
+print(f"Triangle: area = {triangle.area():.2f} cm\n perimeter = {triangle.perimeter():.2f} cm")
