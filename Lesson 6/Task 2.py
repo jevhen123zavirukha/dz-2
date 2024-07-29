@@ -16,3 +16,9 @@ class CreditCard(PaymentMedia):
 class BankTransfer(PaymentMedia):
     def implement_a_payment(self, amount):
         print(f"Payment {amount} UAH. made using a bank transfer.")
+
+
+class OnlineWallet(PaymentMedia):
+    def implement_a_payment(self, amount):
+        print(f"Payment {amount} UAH. made using a online wallet.")
+
