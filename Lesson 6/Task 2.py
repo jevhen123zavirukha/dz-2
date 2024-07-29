@@ -36,3 +36,19 @@ class PaymentProcessor:
             method.implement_a_payment(amount)
         else:
             print("The selected payment method does not exist.")
+
+
+if __name__ == "__main__":
+    processor = PaymentProcessor()
+
+    credit_card = CreditCard()
+    bank_transfer = BankTransfer()
+    online_wallet = OnlineWallet()
+
+    processor.add_payment_method(credit_card)
+    processor.add_payment_method(bank_transfer)
+    processor.add_payment_method(online_wallet)
+
+    processor.make_a_payment(0, float(input("Please enter the total amount: ")))
+    processor.make_a_payment(1, float(input("\nPlease enter the total amount: ")))
+    processor.make_a_payment(2, float(input("\nPlease enter the total amount: ")))
