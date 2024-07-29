@@ -7,3 +7,7 @@ class PaymentMedia(ABC):
     def implement_a_payment(self, amount):
         pass
 
+
+class CreditCard(PaymentMedia):
+    def implement_a_payment(self, amount):
+        print(f"Payment {amount} UAH. made using a credit card.")
